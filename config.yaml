@@ -1,0 +1,18 @@
+config:
+  pluginFolder: ".build/plugins"
+  enablePlugins:
+    - eCommerce.js
+  corePlugin:
+#    name: express
+#    htmlFolder : public
+#    port : 3000
+    enableGraphQL : true
+    typedefsFolder: .build/plugins/typedefs
+
+hello:
+  method: get
+  path: /hello
+
+
+eCommerce:
+  type: graphQL

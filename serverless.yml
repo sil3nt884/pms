@@ -1,0 +1,23 @@
+service: techronin-graphql
+provider:
+  environment:
+    DBURL: mysql://aws:R.lfirehells911@88.97.10.194:3306/ecommerce
+  name: aws
+  region: eu-west-2
+  runtime: nodejs18.x
+  stage: dev
+functions:
+  graphql:
+    handler: src/handler.handler
+    events:
+      - httpApi:
+          path: /
+          method: POST
+plugins:
+  - serverless-scriptable-plugin
+custom:
+  scriptHooks:
+    before:package:createDeploymentArtifacts: npm run zip-build
+
+package:
+  artifact: .serverless/techronin-graphql.zip

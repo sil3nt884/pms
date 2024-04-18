@@ -1,0 +1,21 @@
+{
+  "extends": ["plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "ignorePatterns": ["dist"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off",
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "no-undef": "off",
+    "linebreak-style": "off"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+     "ecmaVersion": "latest"
+  }
+}

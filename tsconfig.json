@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "preserveConstEnums": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "allowJs": true,
+
+    "module": "ESNext",
+    "target": "ES2018",
+    "outDir": ".build",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "noEmit": false
+  },
+  "include": ["./src/**/*", "plugins/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "types": ["node"]
+}

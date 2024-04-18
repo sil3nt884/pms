@@ -1,0 +1,5 @@
+{
+  "watch": ["src/*", "plugins/*"],
+  "exec": "npm run start:dev",
+  "ext": "js"
+}
